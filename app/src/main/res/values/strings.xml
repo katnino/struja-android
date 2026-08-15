@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Struja</string>
+    <string name="settings">Postavke</string>
+    <string name="add_meter">Dodaj brojilo</string>
+    <string name="add_reading">Dodaj očitanje</string>
+    <string name="save">Sačuvaj</string>
+    <string name="cancel">Odustani</string>
+    <string name="delete">Obriši</string>
+    <string name="export_pdf">Izvezi PDF</string>
+    <string name="no_readings">Nema očitanja</string>
+    <string name="no_bills">Nema računa</string>
+    <string name="empty_meters">Nema povezanih brojila</string>
+    <string name="error_generic">Došlo je do greške</string>
+</resources>
