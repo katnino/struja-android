@@ -15,6 +15,8 @@ import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import androidx.hilt.navigation.compose.hiltViewModel
+import androidx.lifecycle.viewModelScope
+import kotlinx.coroutines.launch
 import ba.noniboy.struja.R
 import ba.noniboy.struja.ui.components.MeterCard
 import ba.noniboy.struja.ui.viewmodel.DashboardViewModel
@@ -56,8 +58,9 @@ fun DashboardScreen(
             )
         },
         floatingActionButton = {
-            // TODO: Add meter creation FAB (or menu)
-            FloatingActionButton(onClick = { /* TODO */ }) {
+            FloatingActionButton(onClick = {
+                viewModel.createMeter()
+            }) {
                 Icon(
                     imageVector = Icons.Default.Add,
                     contentDescription = "Dodaj brojilo"
